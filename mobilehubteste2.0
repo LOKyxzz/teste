@@ -121,6 +121,9 @@ local WORLD = player.World.Value
 --To reference the countdown in trial
 REMOTE.AttemptTravel:InvokeServer("Tower")
 character.HumanoidRootPart.CFrame = WS.Worlds.Tower.Spawns.SpawnLocation.CFrame
+
+REMOTE.JoinTimetrial:FireServer(yesButton.Activated)
+
 WS.Worlds.Tower.Water.CanCollide = true
 
 REMOTE.AttemptTravel:InvokeServer(WORLD)
